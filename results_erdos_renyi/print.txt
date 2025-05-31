@@ -1,0 +1,32 @@
+Generation 1: Best front size = 3
+Generation 2: Best front size = 4
+Generation 3: Best front size = 2
+Generation 4: Best front size = 3
+Generation 5: Best front size = 3
+Generation 6: Best front size = 2
+Generation 7: Best front size = 5
+Generation 8: Best front size = 4
+Generation 9: Best front size = 4
+Generation 10: Best front size = 5
+Generation 11: Best front size = 6
+Generation 12: Best front size = 2
+Generation 13: Best front size = 2
+Generation 14: Best front size = 2
+Generation 15: Best front size = 2
+
+Network statistics:
+Average degree in network: 1.87
+Minimum degree: 0
+Maximum degree: 6
+
+Analysis of Pareto-optimal solutions:
+
+Solution 1:
+Peak infection: 1.00
+Number of vaccinated: 75.0
+Average degree of vaccinated nodes: 1.76
+
+Solution 2:
+Peak infection: 1.40
+Number of vaccinated: 70.0
+Average degree of vaccinated nodes: 1.89

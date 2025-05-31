@@ -14,7 +14,11 @@ import csv
 from epidemic_simulation import run_simulation
 
 # Create Barabási-Albert network for modeling social contacts
-G = nx.barabasi_albert_graph(n=200, m=3)
+num_nodes = 200
+# G = nx.barabasi_albert_graph(num_nodes, 3)
+# G = nx.erdos_renyi_graph(num_nodes, 0.01)
+G = nx.watts_strogatz_graph(num_nodes, 4, 0.1)
+
 dim = G.number_of_nodes()
 
 def evaluate(individual):
