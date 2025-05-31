@@ -14,10 +14,10 @@ import csv
 from epidemic_simulation import run_simulation
 
 # Create Barabási-Albert network for modeling social contacts
-num_nodes = 200
-# G = nx.barabasi_albert_graph(num_nodes, 3)
+num_nodes = 400
+G = nx.barabasi_albert_graph(num_nodes, 3)
 # G = nx.erdos_renyi_graph(num_nodes, 0.01)
-G = nx.watts_strogatz_graph(num_nodes, 4, 0.1)
+# G = nx.watts_strogatz_graph(num_nodes, 4, 0.1)
 
 dim = G.number_of_nodes()
 
@@ -28,7 +28,7 @@ def evaluate(individual):
     f2: Number of vaccinations (lower is more economical)
     """
     x_vector = individual['x']
-    f1 = run_simulation(x_vector, G, repeats=5)
+    f1 = run_simulation(x_vector, G, repeats=8)
     f2 = sum(x_vector)
     return np.array([f1, f2])
 
@@ -194,7 +194,7 @@ def nsga2(pop_size=20, generations=10, sigma=0.1, lower_bound=-10, upper_bound=1
 
 if __name__ == "__main__":
     # Run NSGA-II optimization
-    init_pop, final_pop = nsga2(pop_size=30, generations=15, sigma=0.1)
+    init_pop, final_pop = nsga2(pop_size=50, generations=20, sigma=0.1)
 
     # Plot population development
     init_objs = np.array([ind['objectives'] for ind in init_pop])

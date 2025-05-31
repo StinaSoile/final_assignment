@@ -1,3 +1,10 @@
+We used a erdos-renyi network with 200 nodes and adapted the NSGA-II algorithm provided in the course materials, with the following settings:
+    • Population size: 30
+    • Generations: 15
+    • Chromosome representation: Binary vector x ∈ {0,1}^200
+    • Simulation repeats: 5
+    • Mutation: Bit-flip mutation with probability 0.05 per bit
+
 Generation 1: Best front size = 3
 Generation 2: Best front size = 4
 Generation 3: Best front size = 2
