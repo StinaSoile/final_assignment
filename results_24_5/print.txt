@@ -1,0 +1,54 @@
+We used a Barabási–Albert network with 200 nodes and adapted the NSGA-II algorithm provided in the course materials, with the following settings:
+    • Population size: 30
+    • Generations: 15
+    • Chromosome representation: Binary vector x ∈ {0,1}^200
+    • Simulation repeats: 5
+    • Mutation: Bit-flip mutation with probability 0.05 per bit
+
+Generation 1: Best front size = 5
+Generation 2: Best front size = 4
+Generation 3: Best front size = 4
+Generation 4: Best front size = 8
+Generation 5: Best front size = 8
+Generation 6: Best front size = 8
+Generation 7: Best front size = 8
+Generation 8: Best front size = 4
+Generation 9: Best front size = 5
+Generation 10: Best front size = 6
+Generation 11: Best front size = 6
+Generation 12: Best front size = 6
+Generation 13: Best front size = 6
+Generation 14: Best front size = 6
+Generation 15: Best front size = 5
+
+Network statistics:
+Average degree in network: 5.91
+Minimum degree: 3
+Maximum degree: 38
+
+Analysis of Pareto-optimal solutions:
+
+Solution 1:
+Peak infection: 1.20
+Number of vaccinated: 78.0
+Average degree of vaccinated nodes: 5.86 (network average: 5.91)
+
+Solution 2:
+Peak infection: 1.00
+Number of vaccinated: 89.0
+Average degree of vaccinated nodes: 6.16 (network average: 5.91)
+
+Solution 3:
+Peak infection: 8.40
+Number of vaccinated: 74.0
+Average degree of vaccinated nodes: 6.43 (network average: 5.91)
+
+Solution 4:
+Peak infection: 12.00
+Number of vaccinated: 64.0
+Average degree of vaccinated nodes: 6.22 (network average: 5.91)
+
+Solution 5:
+Peak infection: 47.40
+Number of vaccinated: 63.0
+Average degree of vaccinated nodes: 6.10 (network average: 5.91)
